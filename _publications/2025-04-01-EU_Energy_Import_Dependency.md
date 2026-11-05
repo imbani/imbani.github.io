@@ -1,7 +1,7 @@
 ---
 title: "European Energy Import Dependency"
 collection: publications
-category: manuscripts
+category: Federal Reserve Board of Governors FedsNotes
 permalink: /publication/2025-04-01-EU_Energy_Import_Dependency
 date: 2025-04-16
 venue: 'Federal Reserve Board of Governors'

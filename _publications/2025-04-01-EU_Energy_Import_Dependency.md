@@ -9,3 +9,4 @@ slidesurl: 'https://www.federalreserve.gov/econres/notes/feds-notes/european-ene
 paperurl: 'https://www.federalreserve.gov/econres/notes/feds-notes/european-energy-import-dependency-20250416.html'
 bibtexurl: 'https://www.federalreserve.gov/econres/notes/feds-notes/european-energy-import-dependency-20250416.html'
 citation: 'Sterling, Julianna, Missaka Warusawitharana, and Xiangyu Zhang (2025). "European Energy Import Dependency," FEDS Notes. Washington: Board of Governors of the Federal Reserve System, April 16, 2025, https://doi.org/10.17016/2380-7172.3768.'
+---

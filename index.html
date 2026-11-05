@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VLSIT_ASIC_SOC_AI_SKILLS - ASIC and FPGA Design AI Skills</title>
+<meta name="description" content="Download and use VLSIT_ASIC_SOC_AI_SKILLS, a Windows-friendly collection of ASIC and FPGA design AI skills for chip design, RTL design, SoC projects, and AI workflows.">
+<meta name="keywords" content="aiflow, asic, asic-design, fpga-soc, rtl-design, ASIC AI skills, FPGA design, SoC design, chip design workflow, Windows download">
+<meta name="author" content="imbani">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://github.com/imbani/VLSIT_ASIC_SOC_AI_SKILLS">
+<meta property="og:title" content="VLSIT_ASIC_SOC_AI_SKILLS - ASIC and FPGA Design AI Skills">
+<meta property="og:description" content="A practical collection of ASIC and FPGA design AI skills for chip design, RTL design, SoC projects, and AI workflows.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://github.com/imbani/VLSIT_ASIC_SOC_AI_SKILLS">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="VLSIT_ASIC_SOC_AI_SKILLS - ASIC and FPGA Design AI Skills">
+<meta name="twitter:description" content="Download and use ASIC and FPGA design AI skills for chip design, RTL design, SoC projects, and AI workflows.">
+<style>
+  :root {
+    --ink: #1f2937;
+    --muted: #4b5563;
+    --line: #e5e7eb;
+    --paper: #ffffff;
+    --soft: #f7f9fc;
+    --accent: #2563eb;
+    --accent-dark: #1d4ed8;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: linear-gradient(180deg, #eef4ff 0%, #f7f9fc 22%, #f7f9fc 100%);
+    color: var(--ink);
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+    line-height: 1.75;
+    font-size: 17px;
+  }
+  .page {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 28px 18px 64px;
+  }
+  .hero, .card, .section {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 22px;
+    box-shadow: 0 14px 36px rgba(15, 23, 42, 0.08);
+  }
+  .hero {
+    padding: clamp(24px, 5vw, 48px);
+    margin-bottom: 22px;
+    text-align: center;
+  }
+  h1 {
+    margin: 0 0 16px;
+    font-size: clamp(2rem, 5vw, 3.25rem);
+    line-height: 1.15;
+    letter-spacing: -0.035em;
+  }
+  h2 {
+    margin: 0 0 14px;
+    font-size: clamp(1.4rem, 3vw, 1.9rem);
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+  }
+  h3 {
+    margin: 0 0 8px;
+    font-size: 1.15rem;
+    line-height: 1.35;
+  }
+  p { margin: 0 0 16px; color: var(--muted); }
+  .lead {
+    max-width: 760px;
+    margin: 0 auto 24px;
+    font-size: 1.08rem;
+    color: var(--muted);
+  }
+  .button-primary {
+    display: inline-block;
+    padding: 15px 26px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #ff6a00 0%, #ee0979 55%, #7c3aed 100%);
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 800;
+    letter-spacing: 0.01em;
+    box-shadow: 0 12px 26px rgba(238, 9, 121, 0.30);
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+    line-height: 1.2;
+  }
+  .button-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 32px rgba(238, 9, 121, 0.36);
+  }
+  .button-blue {
+    background: linear-gradient(135deg, #0ea5e9 0%, #2563eb 55%, #4f46e5 100%);
+    box-shadow: 0 12px 26px rgba(37, 99, 235, 0.28);
+  }
+  .button-blue:hover {
+    box-shadow: 0 16px 32px rgba(37, 99, 235, 0.34);
+  }
+  .section {
+    padding: clamp(22px, 4vw, 38px);
+    margin-top: 22px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    margin-top: 18px;
+  }
+  .card {
+    padding: 20px;
+    box-shadow: 0 8px 22px rgba(15, 23, 42, 0.06);
+  }
+  ul, ol {
+    margin: 0 0 16px 22px;
+    padding: 0;
+    color: var(--muted);
+  }
+  li { margin-bottom: 8px; }
+  .pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 16px 0 0;
+  }
+  .pill {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 999px;
+    background: #eef4ff;
+    border: 1px solid #dbe7<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VLSIT_ASIC_SOC_AI_SKILLS - ASIC and FPGA Design AI Skills</title>
+<meta name="description" content="Download VLSIT_ASIC_SOC_AI_SKILLS, a Windows-friendly collection of ASIC and FPGA design AI skills for chip design, RTL design, SoC projects, and AI workflows.">
+<meta name="keywords" content="aiflow, asic, asic-design, fpga-soc, rtl-design, ASIC AI skills, FPGA design, SoC design, chip design workflow, Windows download">
+<meta name="author" content="imbani">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://github.com/imbani/VLSIT_ASIC_SOC_AI_SKILLS">
+<meta property="og:title" content="VLSIT_ASIC_SOC_AI_SKILLS - ASIC and FPGA Design AI Skills">
+<meta property="og:description" content="A practical collection of ASIC and FPGA design AI skills for chip design, RTL design, SoC projects, and AI workflows.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://github.com/imbani/VLSIT_ASIC_SOC_AI_SKILLS">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="VLSIT_ASIC_SOC_AI_SKILLS - ASIC and FPGA Design AI Skills">
+<meta name="twitter:description" content="Download ASIC and FPGA design AI skills for chip design, RTL design, SoC projects, and AI workflows.">
+<style>
+  :root {
+    --ink: #1f2937;
+    --muted: #4b5563;
+    --line: #e5e7eb;
+    --paper: #ffffff;
+    --soft: #f7f9fc;
+    --accent: #2563eb;
+    --accent-dark: #1d4ed8;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: linear-gradient(180deg, #eef4ff 0%, #f7f9fc 22%, #f7f9fc 100%);
+    color: var(--ink);
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+    line-height: 1.75;
+    font-size: 17px;
+  }
+  .page {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 28px 18px 64px;
+  }
+  .hero, .section {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 22px;
+    box-shadow: 0 14px 36px rgba(15, 23, 42, 0.08);
+  }
+  .hero {
+    padding: clamp(24px, 5vw, 48px);
+    margin-bottom: 22px;
+    text-align: center;
+  }
+  h1 {
+    margin: 0 0 16px;
+    font-size: clamp(2rem, 5vw, 3.25rem);
+    line-height: 1.15;
+    letter-spacing: -0.035em;
+  }
+  h2 {
+    margin: 0 0 14px;
+    font-size: clamp(1.4rem, 3vw, 1.9rem);
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+  }
+  h3 {
+    margin: 0 0 8px;
+    font-size: 1.15rem;
+    line-height: 1.35;
+  }
+  p {
+    margin: 0 0 16px;
+    color: var(--muted);
+  }
+  .lead {
+    max-width: 780px;
+    margin: 0 auto 24px;
+    font-size: 1.08rem;
+    color: var(--muted);
+  }
+  .button-primary {
+    display: inline-block;
+    padding: 15px 26px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #ff6a00 0%, #ee0979 55%, #7c3aed 100%);
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 800;
+    letter-spacing: 0.01em;
+    box-shadow: 0 12px 26px rgba(238, 9, 121, 0.30);
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+    line-height: 1.2;
+    text-align: center;
+  }
+  .button-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 32px rgba(238, 9, 121, 0.36);
+  }
+  .button-blue {
+    background: linear-gradient(135deg, #0ea5e9 0%, #2563eb 55%, #4f46e5 100%);
+    box-shadow: 0 12px 26px rgba(37, 99, 235, 0.28);
+  }
+  .button-blue:hover {
+    box-shadow: 0 16px 32px rgba(37, 99, 235, 0.34);
+  }
+  .section {
+    padding: clamp(22px, 4vw, 38px);
+    margin-top: 22px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    margin-top: 18px;
+  }
+  .card {
+    background: #ffffff;
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    padding: 20px;
+    box-shadow: 0 8px 22px rgba(15, 23, 42, 0.06);
+  }
+  ul, ol {
+    margin: 0 0 16px 22px;
+    padding: 0;
+    color: var(--muted);
+  }
+  li { margin-bottom: 8px; }
+  .pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 18px 0 0;
+    justify-content: center;
+  }
+  .pill {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 999px;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VLSIT_ASIC_SOC_AI_SKILLS - ASIC and FPGA Design AI Skills for Windows</title>
+<meta name="description" content="Download VLSIT_ASIC_SOC_AI_SKILLS, a friendly collection of ASIC and FPGA design AI skills for chip design, RTL design and SoC projects on Windows. Simple step-by-step guide for beginners.">
+<meta name="keywords" content="aiflow, asic, asic-design, fpga-soc, rtl-design, ASIC AI skills, FPGA design, SoC design, chip design workflow, RTL design toolkit, Windows download">
+<meta name="author" content="imbani">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#2563eb">
+<link rel="canonical" href="https://github.com/imbani/VLSIT_ASIC_SOC_AI_SKILLS">
+<meta property="og:site_name" content="VLSIT_ASIC_SOC_AI_SKILLS">
+<meta property="og:title" content="VLSIT_ASIC_SOC_AI_SKILLS - ASIC and FPGA Design AI Skills">
+<meta property="og:description" content="A practical collection of ASIC and FPGA design AI skills for chip design, RTL design and SoC projects. Easy Windows setup guide.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://github.com/imbani/VLSIT_ASIC_SOC_AI_SKILLS">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="VLSIT_ASIC_SOC_AI_SKILLS - ASIC and FPGA Design AI Skills">
+<meta name="twitter:description" content="Download ASIC and FPGA design AI skills for chip design, RTL design and SoC projects on Windows.">
+<style>
+  :root {
+    --ink: #1b2431;
+    --muted: #52606f;
+    --line: #e4e9f2;
+    --paper: #ffffff;
+    --page: #f5f8fd;
+    --accent: #2563eb;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--page);
+    color: var(--ink);
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 28px 18px 70px;
+  }
+  .hero, .section {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 22px;
+    box-shadow: 0 14px 34px rgba(15, 23, 42, 0.07);
+  }
+  .hero {
+    padding: clamp(26px, 5vw, 52px) clamp(18px, 4vw, 46px);
+    text-align: center;
+  }
+  .section {
+    padding: clamp(24px, 4vw, 40px);
+    margin-top: 22px;
+  }
+  h1 {
+    margin: 0 0 18px;
+    font-size: clamp(1.9rem, 4.6vw, 3rem);
+    line-height: 1.16;
+    letter-spacing: -0.03em;
+  }
+  h2 {
+    margin: 0 0 14px;
+    font-size: clamp(1.35rem, 3vw, 1.85rem);
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+  }
+  h3 {
+    margin: 0 0 8px;
+    font-size: 1.12rem;
+    line-height: 1.35;
+  }
+  p {
+    margin: 0 0 16px;
+    color: var(--muted);
+  }
+  p:last-child, ul:last-child, ol:last-child { margin-bottom: 0; }
+  .lead {
+    max-width: 780px;
+    margin: 0 auto 26px;
+    font-size: 1.06rem;
+    color: var(--muted);
+  }
+  .btn {
+    display: inline-block;
+    padding: 16px 30px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #ff6a00 0%, #ee0979 55%, #7c3aed 100%);
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 1.02rem;
+    text-decoration: none;
+    line-height: 1.2;
+    box-shadow: 0 12px 26px rgba(238, 9, 121, 0.30);
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+  }
+  .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 17px 32px rgba(238, 9, 121, 0.36);
+  }
+  .btn.blue {
+    background: linear-gradient(135deg, #0ea5e9 0%, #2563eb 55%, #4f46e5 100%);
+    box-shadow: 0 12px 26px rgba(37, 99, 235, 0.28);
+  }
+  .btn.blue:hover { box-shadow: 0 17px 32px rgba(37, 99, 235, 0.34); }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    margin-top: 20px;
+  }
+  .card {
+    background: #ffffff;
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.05);
+  }
+  ul, ol {
+    margin: 0 0 16px 22px;
+    padding: 0;
+    color: var(--muted);
+  }
+  li { margin-bottom: 9px; }
+  li::marker { color: var(--accent); }
+  .pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 22px 0 0;
+    justify-content: center;
+  }
+  .pill {
+    display: inline-block;
+    padding: 6px 13px;
+    border-radius: 999px;
+    background: #eef4ff;
+    border: 1px solid #d9e5ff;
+    color: #1d4ed8;
+    font-size: 0.86rem;
+    font-weight: 600;
+  }
+  .note {
+    background: #f2f7ff;
+    border: 1px solid #d9e5ff;
+    border-radius: 16px;
+    padding: 18px 20px;
+    margin-top: 20px;
+  }
+  .note p { color: #274060; }
+  .cta {
+    text-align: center;
+    background: linear-gradient(135deg, #eef4ff 0%, #f7f0ff 100%);
+    border: 1px solid #dfe8ff;
+    border-radius: 22px;
+    padding: clamp(26px, 4vw, 40px);
+    margin-top: 22px;
+    box-shadow: 0 14px 34px rgba(15, 23, 42, 0.06);
+  }
+  .cta h2 { margin-bottom: 10px; }
+  .cta p { max-width: 640px; margin: 0 auto 22px; }
+  footer {
+    margin-top: 26px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #6b7787;
+  }
+  footer a { color: var(--accent); text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+  @media (max-width: 640px) {
+    body { font-size: 16px; }
+    .grid { grid-template-columns: 1fr; }
+    .btn { display: block; width: 100%; padding: 16px 18px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <h1>🧠 VLSIT_ASIC_SOC_AI_SKILLS - Smart Skills for Chip Design</h1>
+    <p class="lead">A ready-to-use collection of AI skills for ASIC and FPGA design work on Windows. It brings chip design knowledge, RTL design guidance and SoC project support together in one place, so you can focus on your ideas instead of hunting through scattered notes.</p>
+    <a class="btn" href="https://github.com/imbani/VLSIT_ASIC_SOC_AI_SKILLS">⬇ Get VLSIT_ASIC_SOC_AI_SKILLS</a>
+    <div class="pills">
+      <span class="pill">aiflow</span>
+      <span class="pill">asic</span>
+      <span class="pill">asic-design</span>
+      <span class="pill">fpga-soc</span>
+      <span class="pill">rtl-design</span>
+    </div>
+  </header>
+
+  <section class="section">
+    <h2>👋 What This Software Does</h2>
+    <p>VLSIT_ASIC_SOC_AI_SKILLS is a set of skill definitions for AI assistants that help with digital chip design. In everyday terms, it teaches an AI helper the vocabulary and habits of chip engineers, so the answers you get are useful instead of generic.</p>
+    <p>You do not need to write code to use it. You open the files, read along, and let your AI tool of choice apply the guidance while you describe what you want to build. Think of it as a well-organized reference shelf that your assistant can read from.</p>
+    <div class="grid">
+      <div class="card">
+        <h3>🧩 ASIC design support</h3>
+        <p>Guidance for planning digital blocks, describing how they behave, and checking your work before it moves to the next stage.</p>
+      </div>
+      <div class="card">
+        <h3>🔌 FPGA and SoC focus</h3>
+        <p>Material that helps with programmable logic boards and combined chip projects where many parts must work together.</p>
+      </div>
+      <div class="card">
+        <h3>✍️ RTL design help</h3>
+        <p>Clear explanations of hardware description style, naming, structure and review habits that keep designs readable.</p>
+      </div>
+      <div class="card">
+        <h3>🤖 AI workflow ready</h3>
+        <p>Written to slot into an AI-assisted workflow, so you can ask questions in plain language and get focused answers.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>🚀 Download and Setup on Windows</h2>
+    <p>Getting started takes only a few minutes. Follow the steps below in order and you will have everything in place.</p>
+    <ol>
+      <li><strong>Visit the download page.</strong> Visit this link to download the application: <a href="https://github.com/imbani/VLSIT_ASIC_SOC_AI_SKILLS">https://github.com/imbani/VLSIT_ASIC_SOC_AI_SKILLS</a></li>
+      <li><strong>Save the files to your PC.</strong> Use the green Code button on the page, then choose the option that downloads everything as a single compressed folder. Windows will place it in your Downloads folder by default.</li>
+      <li><strong>Unpack the folder.</strong> Right-click the downloaded folder and choose Extract All. Pick a simple location such as C:\VLSIT_Skills so the path stays short and easy to find.</li>
+      <li><strong>Look inside.</strong> Open the extracted folder in File Explorer. You will see organized files and instruction documents that describe each skill.</li>
+      <li><strong>Open the documents.</strong> Any plain text or Markdown file can be opened with Notepad, which is already installed on Windows. Right-click a file, choose Open with, then Notepad.</li>
+      <li><strong>Connect your AI tool.</strong> Point your assistant at the extracted folder, or copy the text of a skill file into your chat as context. The assistant will then follow the guidance it finds there.</li>
+    </ol>
+    <div class="note">
+      <p><strong>Tip:</strong> Keep the extracted folder in one place and do not rename the internal files. Assistants and scripts often look for exact file names, and renaming can break that link.</p>
+    </div>
+    <p style="margin-top:22px;"><a class="btn blue" href="https://github.com/imbani/VLSIT_ASIC_SOC_AI_SKILLS">⬇ Visit this link to download the application</a></p>
+  </section>
+
+  <section class="section">
+    <h2>🖥️ What You Need on Your Computer</h2>
+    <p>The package is lightweight. Most modern Windows laptops and desktops handle it without any changes.</p>
+    <ul>
+      <li>Windows 10 or Windows 11, 64-bit edition.</li>
+      <li>A current version of Microsoft Edge, Google Chrome or Firefox for opening the download page.</li>
+      <li>About 200 MB of free disk space for the files and any notes you create.</li>
+      <li>At least 4 GB of memory, with 8 GB or more recommended if you run a browser-based AI assistant at the same time.</li>
+      <li>Notepad, which comes with Windows, for reading the text files. A free editor such as Notepad++ makes long documents easier to browse.</li>
+      <li>A stable internet connection for the initial download and for any AI assistant you connect afterwards.</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>📖 A Simple First Session</h2>
+    <p>If you have never worked with chip design files before, this short walkthrough gives you a comfortable starting point.</p>
+    <ol>
+      <li>Open the extracted folder and find the general overview document near the top of the list.</li>
+      <li>Read the first two or three pages slowly. The terms will feel unfamiliar at first, and that is normal.</li>
+      <li>Pick one small topic that interests you, such as how a design block is described in text form.</li>
+      <li>Open your AI assistant and paste that section in, then ask a plain question like "explain this to a beginner".</li>
+      <li>Write down the answers you find useful in a separate notes file so you build your own summary over time.</li>
+      <li>Repeat with the next topic. Small sessions of twenty minutes work better than long ones.</li>
+    </ol>
+    <p>There is no install wizard, no account to create, and nothing runs in the background. The files simply sit on your computer until you open them.</p>
+  </section>
+
+  <section class="section">
+    <h2>💡 Common Questions</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Do I need to know programming?</h3>
+        <p>No. The material is written to be read and used in conversation. Basic comfort with files and folders is enough.</p>
+      </div>
+      <div class="card">
+        <h3>Is anything installed on my system?</h3>
+        <p>No. You download a folder, extract it, and read the contents. Nothing is added to Windows startup or the registry.</p>
+      </div>
+      <div class="card">
+        <h3>Can I move the folder later?</h3>
+        <p>Yes. You can move or copy the extracted folder anywhere on your drive. Just avoid renaming the files inside it.</p>
+      </div>
+      <div class="card">
+        <h3>What if the download looks like a page?</h3>
+        <p>It is a project page. Use the green Code button and choose the download option for the whole project.</p>
+      </div>
+      <div class="card">
+        <h3>Can I open the files on another computer?</h3>
+        <p>Yes. Copy the extracted folder to a USB drive or cloud folder and open it on any Windows machine.</p>
+      </div>
+      <div class="card">
+        <h3>How do I stay updated?</h3>
+        <p>Return to the download page now and then and grab the newest version, then replace your old folder.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>🔧 If Something Does Not Work</h2>
+    <ul>
+      <li><strong>The file will not open:</strong> right-click it, choose Open with, and select Notepad from the list.</li>
+      <li><strong>The folder looks empty:</strong> the extraction step probably did not finish. Run Extract All again and wait for it to complete.</li>
+      <li><strong>Text looks like one long paragraph:</strong> widen the Notepad window, or turn on word wrap from the Format menu.</li>
+      <li><strong>Your browser blocks the download:</strong> look for a small arrow or warning icon in the address bar and allow the file for this site.</li>
+      <li><strong>Paths feel too long:</strong> move the folder closer to the drive root, for example C:\VLSIT_Skills.</li>
+      <li><strong>You lost track of where things are:</strong> press the Windows key, type the folder name, and the search results will show its location.</li>
+    </ul>
+  </section>
+
+  <section class="cta">
+    <h2>🎯 Start Designing With Confidence</h2>
+    <p>Everything you need is one page away. Grab the files, unpack them, and let your AI assistant handle the heavy reference work while you concentrate on the design itself.</p>
+    <a class="btn" href="https://github.com/imbani/VLSIT_ASIC_SOC_AI_SKILLS">⬇ Get VLSIT_ASIC_SOC_AI_SKILLS Now</a>
+  </section>
+
+  <footer>
+    <p>VLSIT_ASIC_SOC_AI_SKILLS — ASIC and FPGA Design AI Skills. Project maintained on <a href="https://github.com/imbani/VLSIT_ASIC_SOC_AI_SKILLS">GitHub</a>.</p>
+  </footer>
+
+</div>
+</body>
+</html>
